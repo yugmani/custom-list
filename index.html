@@ -1,69 +1,34 @@
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <script src="script.js"></script>
-  <style>
-    .one {
-      background-color: whitesmoke;
-    }
+  <body>
+    <h1>List Markers</h1>
+    <div class="containers">
+      <h3>List without style</h3>
+      <ol class="one">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Iusto minus molestiae neque dolore.</li>
+        <li>Provident, dolore. Recusandae, velit officiis.</li>
+      </ol>
+      <h3>List with custom counter</h3>
+      <ul class="two">
+        <li><br />Lorem ipsum dolor sit amet consectetur.</li>
+        <li><br />Sapiente laborum itaque qui vero voluptas.</li>
+        <li><br />Quam, obcaecati? A quam tenetur esse?</li>
+      </ul>
 
-    .two {
-      list-style-position: inside;
-      counter-reset: ol;
-      text-align: center;
-      background-color: lightgray;
-    }
-
-    .two>li {
-      counter-increment: ol;
-    }
-
-    .two>li::marker {
-      white-space: pre-wrap;
-      content: counter(ol) "- \A";
-      color: orange;
-      font-size: 200%;
-    }
-
-    .three {
-      list-style-position: inside;
-      text-align: center;
-      background-color: lightyellow;
-    }
-
-    .three>li::marker {
-      white-space: pre-wrap;
-      content: "<>\A";
-      color: red;
-      font-size: 200%;
-    }
-  </style>
-</head>
-
-<body>
-  <h1>List Markers</h1>
-  <div class="containers">
-    <h3>List without style</h3>
-    <ol class="one">
-      <li>Lorem ipsum dolor sit amet.</li>
-      <li>Iusto minus molestiae neque dolore.</li>
-      <li>Provident, dolore. Recusandae, velit officiis.</li>
-    </ol>
-    <h3>List with custom counter</h3>
-    <ul class="two">
-      <li><br>Lorem ipsum dolor sit amet consectetur.</li>
-      <li><br>Sapiente laborum itaque qui vero voluptas.</li>
-      <li><br>Quam, obcaecati? A quam tenetur esse?</li>
-    </ul>
-
-    <h3>List with custom Marker</h3>
-    <ol class="three">
-      <li>Sed adipisci, ullam suscipit quos cupiditate nemo explicabo.</li>
-      <li>Ea illum culpa beatae sunt odit minus assumenda!</li>
-      <li>Labore impedit animi delectus. Perspiciatis libero consequuntur harum.</li>
-    </ol>
-  </div>
-</body>
-
+      <h3>List with custom Marker</h3>
+      <ol class="three">
+        <li>Sed adipisci, ullam suscipit quos cupiditate nemo explicabo.</li>
+        <li>Ea illum culpa beatae sunt odit minus assumenda!</li>
+        <li>
+          Labore impedit animi delectus. Perspiciatis libero consequuntur harum.
+        </li>
+      </ol>
+    </div>
+  </body>
 </html>
